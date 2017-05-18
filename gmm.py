@@ -111,7 +111,6 @@ for range in n_components_range:
 
             #calculo la eficiencia
             EficienciaTest[fold]=(np.sum(np.diag(confusion))/np.sum(np.sum(confusion)))
-
-std = np.std(EficienciaTest)
-print EficienciaTest
-print std
+            std = np.std(EficienciaTest)
+            print EficienciaTest
+            print std
